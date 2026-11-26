@@ -10,7 +10,7 @@ Clone this skill into your agent's global or project skills directory:
 
 | Agent | Global Install Path | Project-Local Path |
 | :--- | :--- | :--- |
-| **Antigravity** | `~/.gemini/config/skills/STACK` | `.agents/skills/STACK` |
+| **Antigravity** | Global Antigravity skills dir | `.agents/skills/STACK` |
 | **Claude Code** | `~/.claude/skills/STACK` | `.claude/skills/STACK` |
 | **OpenAI Codex** | `~/.codex/skills/STACK` | `.agents/skills/STACK` |
 

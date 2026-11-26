@@ -40,6 +40,11 @@ A comprehensive integration hub for replacing expensive monthly SaaS subscriptio
 - **Repository**: [https://github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) (10k+ ⭐, AGPL-3.0)
 - **What it does**: 100% local voice studio for zero-shot voice cloning (from just an 8–12s sample), voice design, text-to-speech, and video dubbing with MCP server support.
 - **Agent Integration**: Can be orchestrated locally via local REST endpoints or zero-key Edge-TTS/Kokoro fallbacks.
+- **Verified Local Python Fast-Path (Windows RTX 3050 4 GB, `k2-fsa/OmniVoice`)**:
+  - Install cleanly without overwriting CUDA PyTorch: `pip install --no-deps omnivoice`.
+  - Load with `OmniVoice.from_pretrained("k2-fsa/OmniVoice", device_map="cuda:0", dtype=torch.float16, load_asr=False)` (skips Whisper-large-v3 to fit 4 GB VRAM).
+  - Synthesize 1 line at a time (`language="id"`, `num_step=32`, `speed=0.95`, `denoise=True`) + `torch.cuda.empty_cache()` per line; for consistent multi-line narration in Voice Design, generate 1 anchor WAV first and lock speaker identity via `model.create_voice_clone_prompt(ref_audio=..., ref_text=...)`.
+  - **Hard Rule on `instruct=`**: `_resolve_instruct` strictly validates comma-separated attributes (`female`/`male`, `young adult`/`middle-aged`, `low pitch`/`moderate pitch`, `whisper`) and raises `ValueError` on unlisted words like `"calm"`.
 
 ### 3. Calendly ➔ Cal.diy (`calcom/cal.com`)
 - **Repository**: [https://github.com/calcom/cal.com](https://github.com/calcom/cal.com) (49k+ ⭐, MIT — open-source personal version now branded **Cal.diy**)
@@ -103,4 +108,4 @@ Four top-tier open-source GitHub alternatives that directly replace expensive mo
 ## Dead-Ends, Pitfalls & Verified Fixes
 
 - `[Blindly downloading multi-gigabyte models for simple tasks]` -> `[Runs out of disk and memory]` -> `[Use lightweight fast-path engines first: faster-whisper int8 for audio, Edge-TTS for voice, FFmpeg for screen recording]`.
-- `[Hardcoding SaaS webhook tokens in git files]` -> `[Security risk]` -> `[Store all API keys strictly in .env.local and verify gitignore]`.
+- `[Hardcoding SaaS webhook tokens in git files]` -> `[Security risk]` -> `[Store all API keys strictly in local gitignored environment config]`.
