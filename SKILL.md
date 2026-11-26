@@ -1,5 +1,5 @@
 ---
-name: stack
+name: STACK
 description: Curated suite and integration workflows for the top open-source GitHub alternatives to costly SaaS apps and AI subscriptions (Wan 2.1 for Higgsfield, GPT-SoVITS for ElevenLabs, ComfyUI+FLUX for Midjourney, Ollama for ChatGPT Plus, Cap for Loom, Cal.com for Calendly, Chatwoot for Intercom, AppFlowy for Notion, OpenProject for Asana).
 ---
 

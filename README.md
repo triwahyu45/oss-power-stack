@@ -1,4 +1,4 @@
-# stack — Free Open-Source GitHub Alternatives to Paid SaaS
+# STACK — Free Open-Source GitHub Alternatives to Paid SaaS
 
 AI Agent Skill for **Antigravity**, **Claude Code**, and **OpenAI Codex**. Curated integration workflows for top open-source GitHub replacements for expensive SaaS subscriptions (Cap, VoiceStudio, Cal.diy, Chatwoot, AppFlowy, OpenProject, OpenWhispr, OpenSEO, Open-Generative-AI).
 
@@ -10,13 +10,13 @@ Clone this skill into your agent's global or project skills directory:
 
 | Agent | Global Install Path | Project-Local Path |
 | :--- | :--- | :--- |
-| **Antigravity** | `~/.gemini/config/skills/stack` | `.agents/skills/stack` |
-| **Claude Code** | `~/.claude/skills/stack` | `.claude/skills/stack` |
-| **OpenAI Codex** | `~/.codex/skills/stack` | `.agents/skills/stack` |
+| **Antigravity** | `~/.gemini/config/skills/STACK` | `.agents/skills/STACK` |
+| **Claude Code** | `~/.claude/skills/STACK` | `.claude/skills/STACK` |
+| **OpenAI Codex** | `~/.codex/skills/STACK` | `.agents/skills/STACK` |
 
 ```bash
 # Example (Antigravity / Claude Code / Codex — pick your path):
-git clone https://github.com/triwahyu45/stack.git ~/.claude/skills/stack
+git clone https://github.com/triwahyu45/STACK.git ~/.claude/skills/STACK
 ```
 
 ---
