@@ -37,13 +37,13 @@ A comprehensive integration hub for replacing expensive monthly SaaS subscriptio
   ```
 
 ### 2. ElevenLabs ➔ VoiceStudio (`debpalash/VoiceStudio`)
-- **Repository**: [https://github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)
-- **What it does**: Self-hosted local voice studio for zero-shot voice cloning, voice design, text-to-speech, and video dubbing with built-in MCP server support.
+- **Repository**: [https://github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) (10k+ ⭐, AGPL-3.0)
+- **What it does**: 100% local voice studio for zero-shot voice cloning (from just an 8–12s sample), voice design, text-to-speech, and video dubbing with MCP server support.
 - **Agent Integration**: Can be orchestrated locally via local REST endpoints or zero-key Edge-TTS/Kokoro fallbacks.
 
-### 3. Calendly ➔ Cal.com (`calcom/cal.com`)
-- **Repository**: [https://github.com/calcom/cal.com](https://github.com/calcom/cal.com) (35,000+ ⭐)
-- **What it does**: Enterprise-grade scheduling infrastructure with self-hosting, webhooks, and REST API.
+### 3. Calendly ➔ Cal.diy (`calcom/cal.com`)
+- **Repository**: [https://github.com/calcom/cal.com](https://github.com/calcom/cal.com) (49k+ ⭐, MIT — open-source personal version now branded **Cal.diy**)
+- **What it does**: Enterprise-grade scheduling infrastructure with self-hosting, webhooks, Google/Outlook sync, and REST API.
 - **REST API Call**:
   ```bash
   curl -X GET "https://api.cal.com/v1/schedules?apiKey=$CAL_API_KEY"
@@ -62,8 +62,9 @@ A comprehensive integration hub for replacing expensive monthly SaaS subscriptio
 - **Repository**: [https://github.com/opf/openproject](https://github.com/opf/openproject) (9,000+ ⭐)
 - **What it does**: Classic and Agile project management, Gantt charts, roadmaps, bug tracking, and resource allocation.
 
-### 7. Wispr Flow ➔ OpenWhispr / Faster-Whisper
-- **What it does**: Free speech-to-text voice dictation using OpenAI's Whisper model running locally on CPU/GPU without cloud billing.
+### 7. Wispr Flow ➔ OpenWhispr (`OpenWhispr/openwhispr`) / Faster-Whisper
+- **Repository**: [https://github.com/OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) (10.9k+ ⭐, MIT)
+- **What it does**: Global-hotkey speech-to-text voice dictation into any app (supports offline local Whisper models or BYOK online).
 - **Python Fast-Path**:
   ```bash
   pip install faster-whisper
@@ -76,12 +77,13 @@ A comprehensive integration hub for replacing expensive monthly SaaS subscriptio
       print(f"[{segment.start:.2f}s -> {segment.end:.2f}s] {segment.text}")
   ```
 
-### 8. Semrush ➔ OpenSEO & Python Web Auditing
-- **What it does**: On-page SEO crawling, metadata auditing, open-graph validation, heading hierarchy check, and broken link scanning.
-- **Integrated Audit Script**: Crawls target URL, extracts title, meta description, canonical, robots directives, image alt attributes, and Lighthouse scores.
+### 8. Semrush ➔ OpenSEO (`every-app/open-seo`)
+- **Repository**: [https://github.com/every-app/open-seo](https://github.com/every-app/open-seo) (26.7k+ ⭐, MIT)
+- **What it does**: Open-source rank tracking, backlink analysis, and site audit dashboard (*Note: live SEO data fetches via pay-per-use DataForSEO API*).
 
-### 9. Higgsfield ➔ Open Generative AI & Code-to-Video Engine
-- **What it does**: Eliminates $15–$30/mo video diffusion fees using deterministic Remotion and Canvas code-to-video rendering (`lemo-opuscar-video`), or open local diffusion models (Wan 2.1, CogVideoX, ComfyUI).
+### 9. Higgsfield ➔ Open Generative AI (`Anil-matcha/Open-Generative-AI`) & Code-to-Video
+- **Repository**: [https://github.com/Anil-matcha/Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) (33k+ ⭐, MIT — formerly `Open-Higgsfield-AI`)
+- **What it does**: Multi-model studio (600+ models; *note: cloud video/cinema generation uses paid MuAPI keys*). Pair with local `samurai` / `ai-video-studio` or Wan 2.1/ComfyUI for 100% zero-cost local generation.
 
 ---
 
