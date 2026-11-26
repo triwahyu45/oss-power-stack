@@ -102,6 +102,7 @@ Four top-tier open-source GitHub alternatives that directly replace expensive mo
 | **ElevenLabs** | $22–$99/mo | **GPT-SoVITS** | `RVC-Boss/GPT-SoVITS` (40k+ ⭐) | Zero-shot voice cloning with just 5 seconds of sample voice. |
 | **Midjourney** | $30–$60/mo | **ComfyUI + FLUX.1** | `comfyanonymous/ComfyUI` | Hyper-realistic text-to-image with legible typography and complex node pipelines. |
 | **ChatGPT Plus** | $20/mo | **Ollama** | `ollama/ollama` (120k+ ⭐) | Local LLM inference runner for DeepSeek R1, Llama 3.3, and Qwen 2.5 on GPU/CPU. |
+| **Epidemic Sound / Artlist SFX** | $15–$25/mo | **earshot + opus-sound-layer + Openverse** | `Leonxlnx/earshot` (5.8k+ ⭐) / `Bodila51/opus-sound-layer` | Local 922-design + 252-film-SFX MCP server, 1,139 CC0 recordings, and zero-key Openverse CC audio API. |
 
 ---
 
