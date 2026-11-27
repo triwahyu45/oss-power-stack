@@ -1,6 +1,6 @@
 ---
 name: STACK
-description: Curated suite and integration workflows for the top open-source GitHub alternatives to costly SaaS apps and AI subscriptions (Wan 2.1 for Higgsfield, GPT-SoVITS for ElevenLabs, ComfyUI+FLUX for Midjourney, Ollama for ChatGPT Plus, Cap for Loom, Cal.com for Calendly, Chatwoot for Intercom, AppFlowy for Notion, OpenProject for Asana).
+description: Curated suite and integration workflows for the top open-source GitHub alternatives to costly SaaS apps, AI subscriptions, and Agent MCP connectors (Wan 2.1 for Higgsfield, GPT-SoVITS for ElevenLabs, ComfyUI+FLUX for Midjourney, Ollama for ChatGPT Plus, Cap for Loom, Cal.com for Calendly, Chatwoot for Intercom, AppFlowy for Notion, OpenProject for Asana, plus Playwright/Crawl4AI/PostHog/SearXNG/n8n MCP connectors).
 ---
 
 # Open-Source Power Stack (Top 9 Free GitHub Alternatives)
@@ -11,7 +11,7 @@ A comprehensive integration hub for replacing expensive monthly SaaS subscriptio
 
 ## Scope & Trigger Context
 
-- **Triggers**: "stop bayar aplikasi", "alternatif open source", "open source stack", "ganti notion ke appflowy", "ganti loom ke cap", "ganti elevenlabs ke voicestudio", "ganti calendly ke cal.com", "ganti intercom ke chatwoot", "ganti asana ke openproject", "ganti wispr flow ke openwhispr", "ganti semrush ke openseo", "ganti higgsfield ke open genai".
+- **Triggers**: "stop bayar aplikasi", "alternatif open source", "open source stack", "mcp connector", "playwright mcp", "firecrawl", "crawl4ai", "posthog", "composio", "searxng", "ganti notion ke appflowy", "ganti loom ke cap", "ganti elevenlabs ke voicestudio", "ganti calendly ke cal.com", "ganti intercom ke chatwoot", "ganti asana ke openproject", "ganti wispr flow ke openwhispr", "ganti semrush ke openseo", "ganti higgsfield ke open genai".
 - **Coverage**:
   1. **Loom Alternative** ➔ **Cap** (`CapSoftware/Cap` - 25k+ stars)
   2. **ElevenLabs Alternative** ➔ **VoiceStudio** (`debpalash/VoiceStudio`)
@@ -103,6 +103,20 @@ Four top-tier open-source GitHub alternatives that directly replace expensive mo
 | **Midjourney** | $30–$60/mo | **ComfyUI + FLUX.1** | `comfyanonymous/ComfyUI` | Hyper-realistic text-to-image with legible typography and complex node pipelines. |
 | **ChatGPT Plus** | $20/mo | **Ollama** | `ollama/ollama` (120k+ ⭐) | Local LLM inference runner for DeepSeek R1, Llama 3.3, and Qwen 2.5 on GPU/CPU. |
 | **Epidemic Sound / Artlist SFX** | $15–$25/mo | **earshot + opus-sound-layer + Openverse** | `Leonxlnx/earshot` (5.8k+ ⭐) / `Bodila51/opus-sound-layer` | Local 922-design + 252-film-SFX MCP server, 1,139 CC0 recordings, and zero-key Openverse CC audio API. |
+
+---
+
+## 11. 5 Agent MCP Connectors (Free & Local-First Matrix)
+
+Detailed configs & local setup recipes live in [`references/mcp-connectors.md`](references/mcp-connectors.md).
+
+| Connector | Role | Cost / Key Caveat | Free Local-First OSS Alternative |
+| :--- | :--- | :--- | :--- |
+| **Playwright MCP** | Browser automation, forms, E2E QA | 100% Free & Local (`microsoft/playwright-mcp`) | Native (`npx -y @playwright/mcp@latest`) |
+| **Firecrawl MCP** | Web scrape-to-Markdown & brand assets | Free tier / self-host (`$FIRECRAWL_API_KEY`) | **`Crawl4AI`** (`unclecode/crawl4ai`, Apache-2.0) |
+| **PostHog MCP** | Bug tracking, replays, funnel analytics | Free tier / self-host (`$POSTHOG_AUTH_HEADER`) | **`Umami`** (`umami-software/umami`, MIT) |
+| **Perplexity MCP** | Deep real-time web research | Paid API key (`$PERPLEXITY_API_KEY`) | **`SearXNG`** (`searxng/searxng`) + built-in `search_web` |
+| **Composio MCP** | 1,000+ SaaS OAuth integrations | Free tier (`$COMPOSIO_API_KEY`) | **`n8n`** (`n8n-io/n8n`) / **`Activepieces`** (`MIT`) |
 
 ---
 

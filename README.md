@@ -34,7 +34,8 @@ git clone https://github.com/triwahyu45/STACK.git ~/.claude/skills/STACK
 
 - `SKILL.md` — 9-tool matrix, GitHub repo slugs, licenses, & caveats
 - `references/tools-setup.md` — Local/Docker setup & integration recipes
+- `references/mcp-connectors.md` — 5 Agent MCP connectors + free local-first OSS alternatives
 
 ## When to Trigger / Search Keywords
 
-`stack`, `open source alternative`, `stop bayar aplikasi`, `free saas alternative`, `cap`, `cal.diy`, `appflowy`, `openwhispr`, `openseo`
+`stack`, `open source alternative`, `stop bayar aplikasi`, `free saas alternative`, `cap`, `cal.diy`, `appflowy`, `openwhispr`, `openseo`, `mcp connectors`, `playwright mcp`, `firecrawl`, `crawl4ai`, `posthog`, `composio`, `searxng`
